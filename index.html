@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open Transaction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="CSS/styleUA.css" rel="stylesheet">
+
+  </head>
+  <style>
+    
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="me-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <a class="navbar-brand d-none d-lg-block" href="index.html">
+            <img src="img/OT.png" class="brand">
+          </a>
+
+          <a class="navbar-brand d-block d-lg-none ms-auto" href="index.html">
+            <img src="img/OT.png" class="brand">
+          </a>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Головна</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="subscriptions.html">Підписки</a>
+            </li>
+          </ul>
+          
+          <div class="dropdown list-unstyled">
+            <button class="dropbtn">UA</button>
+            <div class="dropdownContent">
+              <li><a href="en/index.html">EN</a></li>
+            </div>
+          </div>
+
+          <button class="btn singIn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+          </svg></button>
+
+          <button class="btn singUp" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Зареєструватися</button>
+          
+        </div>
+      </div>
+    </nav>
+	<main class="container">
+
+      <!-- Модальне вікно -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Ой!</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрити"></button>
+        </div>
+        <div class="modal-body">
+          Вибачте, це ще в розробці...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Закрити</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <section class="selector-funds mt-3">
+      <div class="funds">
+        <label for="fundsSelector" class="form-label"><h3>Який фонд Вас цікавить?</h3></label>
+        <select class="form-select" name="selectFund" id="fundsSelector" aria-expanded="false">
+          <option value="none">-Оберіть фонд-</option>
+          <option value="caritas">Карітас</option>
+        </select>
+      </div>
+    <button class="btn btn-primary mt-3" id="showFundBtn">Показати інформацію</button>
+    </section>
+
+    <div class="collapse mt-3" id="caritasBlock">
+     <hr class="mb-5">
+        <h2 class="Caritas">Карітас</h2>
+          <div class="cards">
+            <div class="card my-3 row shadow">
+              <div class="body h5">
+                <p class="card-title">Транзакція</p>
+              <hr>
+                <p class="body-text">
+                  Відправник: <span>Фонд</span>
+                </p>
+
+                <p class="body-text">
+                  Отримувач: <span>Виробництво</span>
+                </p>
+
+                <p class="body-text">
+                  Сума: <span>1000.00</span>
+                </p>
+
+                <p class="body-text">
+                  Валюта: <span>USD</span>
+                </p>
+
+                <p class="body-text">
+                  Номер транзакції: <span>123456</span>
+                </p>
+
+                <p class="body-text">
+                  Дата: <span>10.05.2025</span>
+                </p>
+              <hr>
+                <div class="d-flex">
+                  <button class="btn more ms-auto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    Детальніше
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-3 row shadow">
+              <div class="body h5">
+                <p class="card-title">Транзакція</p>
+              <hr>
+                <p class="body-text">
+                  Відправник: <span>Фонд</span>
+                </p>
+
+                <p class="body-text">
+                  Отримувач: <span>Виробництво</span>
+                </p>
+
+                <p class="body-text">
+                  Сума: <span>1000.00</span>
+                </p>
+
+                <p class="body-text">
+                  Валюта: <span>USD</span>
+                </p>
+
+                <p class="body-text">
+                  Номер транзакції: <span>123456</span>
+                </p>
+
+                <p class="body-text">
+                  Дата: <span>10.05.2025</span>
+                </p>
+              <hr>
+                <div class="d-flex">
+                  <button class="btn more ms-auto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    Детальніше
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-3 row shadow">
+              <div class="body h5">
+                <p class="card-title">Транзакція</p>
+              <hr>
+                <p class="body-text">
+                  Відправник: <span>Фонд</span>
+                </p>
+
+                <p class="body-text">
+                  Отримувач: <span>Виробництво</span>
+                </p>
+
+                <p class="body-text">
+                  Сума: <span>1000.00</span>
+                </p>
+
+                <p class="body-text">
+                  Валюта: <span>USD</span>
+                </p>
+
+                <p class="body-text">
+                  Номер транзакції: <span>123456</span>
+                </p>
+
+                <p class="body-text">
+                  Дата: <span>10.05.2025</span>
+                </p>
+              <hr>
+                <div class="d-flex">
+                  <button class="btn more ms-auto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    Детальніше
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+	</main>
+
+	<footer class="mt-5 py-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 text-center d-none d-lg-block">Посилання на інші сторінки</div>
+        <div class="col-lg-6 col-sm-12 text-start contacts">
+          <h4 class="mb-3">Контакти</h4>
+          <div class="links">
+            <p class="my-3">email: sasha_k@bfc.org.ua</p>
+            <a class="colesseum" href="https://arena.colosseum.org/projects/explore/open-transaction">Colesseum</a>
+          </div>  
+         <hr>
+          <div class="social-icons d-flex gap-2 mb-2">
+              <a href="https://github.com/CyberCatBerehzany" style="display: flex; align-items: center;">
+                <svg class="github-icon" width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 
+                    0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                    0-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                    0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.65 7.65 0 012.01-.27c.68 0 
+                    1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 
+                    1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 
+                    1.93-.01 2.2 0 .21.15.46.55.38A8.001 8.001 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+              <a href="https://x.com/CyberCat45701" style="display: flex; align-items: center;">
+                <i class="bi bi-twitter-x" style="font-size: 32px;"></i>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+	<div class="bg bg-secondary text-center text-light">&copyOpenTransaction 2025 </div>
+
+<script>
+document.getElementById('showFundBtn').addEventListener('click', function () {
+  const selectedFund = document.getElementById('fundsSelector').value;
+
+  const blocks = document.querySelectorAll('.collapse');
+  blocks.forEach(block => {
+    const bsCollapse = new bootstrap.Collapse(block, { toggle: false });
+    bsCollapse.hide();
+  });
+
+  if (selectedFund !== 'none') {
+    const selectedBlock = document.getElementById(selectedFund + 'Block');
+    const bsCollapse = new bootstrap.Collapse(selectedBlock, { toggle: true });
+    bsCollapse.show();
+  }
+});
+
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

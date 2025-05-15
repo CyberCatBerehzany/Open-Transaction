@@ -1,0 +1,220 @@
+body{
+    background: linear-gradient(to top,rgb(162, 215, 233), white, rgb(162, 215, 233));
+    background-attachment: fixed;
+}
+
+nav{
+    background-color: white;
+    border-bottom: black;
+    border-radius: 3px;
+    border: black;
+}
+.navbar .btn:hover{
+    background-color: #407ad1;
+    color: white;
+}
+.navbar .nav-link {
+    text-decoration: none; 
+    color: black;
+    padding: 10px 15px;
+    margin: 1px;
+    position: relative;
+}
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+.navbar .nav-link:hover::after {
+    width: 100%; 
+}
+.brand{
+    width: 40px;
+    height: 40;
+}
+
+.singIn {
+    background-color: #7cb6d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 10px; 
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: inline-block; 
+}
+.singUp{
+    background-color: #7cb6d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 15px; 
+    margin-left: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: inline-block; 
+}
+.dropbtn {
+    color: black;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownContent {
+    display: none;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    background-color: white;
+    min-width: 60px;
+    z-index: 1;
+}
+.dropdownContent a {
+    color: black;
+    padding: 10px 20px;
+    margin-top: 3px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    border-radius: 5px;
+}
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    color: black;
+}
+
+.form-select{
+    width: 300px;
+    margin-left: 63px;
+}
+@media(max-width: 768px){
+    .form-select{
+        width: 275px;
+        margin-left: 40px;
+    }
+}
+.selector-funds{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.Caritas{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card {
+  flex: 1 1 calc(33.333% - 10px);
+  box-sizing: border-box;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 1px;
+}
+@media (max-width: 768px) {
+    .cards{
+        justify-content: center;
+    }
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+.card-title{
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+  
+.body-text{
+  padding-inline: 10px;
+  display: flex;
+    justify-content: space-between;
+}
+.more{
+    background-color: #7cb6d1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 15px; 
+    margin-left: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+.more:hover{
+    background-color: #407ad1;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+.github-icon{
+    width: 32px;
+    height: 32px;
+    fill: white;
+    transition: fill 0.3s ease;
+}
+.github-icon:hover{
+    fill: gray;
+}
+.bi-twitter-x{
+    color: white;
+    transition: color 0.3s;
+}
+.bi-twitter-x:hover{
+    color: gray;
+}
+
+.contacts{
+    border-left: solid 1px gray;
+}
+@media(max-width: 768px){
+    .contacts{
+        border-left: none;
+    }
+}
+.colesseum{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.colesseum:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
