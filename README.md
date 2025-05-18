@@ -25,4 +25,4 @@ Currently, the website is built using HTML, CSS, JS, and Bootstrap. In the near 
 
 Our website
 
-https://cybercatberehzany.github.io/Open-Transaction/
+https://cybercatberehzany.github.io/Open-Transaction/en/
