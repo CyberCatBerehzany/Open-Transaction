@@ -1,10 +1,10 @@
 body{
-    background: linear-gradient(to top,rgb(162, 215, 233), white, rgb(162, 215, 233));
+    background: #04CCA4;
     background-attachment: fixed;
 }
 
 nav{
-    background-color: white;
+    background-color: #7BFFD5;
     border-bottom: black;
     border-radius: 3px;
     border: black;
@@ -39,7 +39,7 @@ nav{
 }
 
 .singIn {
-    background-color: #7cb6d1;
+    background-color: #3498db;
     color: white;
     border: none;
     border-radius: 5px;
@@ -51,7 +51,7 @@ nav{
     display: inline-block; 
 }
 .singUp{
-    background-color: #7cb6d1;
+    background-color: #3498db;
     color: white;
     border: none;
     border-radius: 5px;
@@ -106,13 +106,13 @@ nav{
 }
 
 .form-select{
-    width: 250px;
-    margin-left: 40px;
+    width: 225px;
+    margin-left: 3px;
 }
 @media(max-width: 768px){
     .form-select{
         width: 250px;
-        margin-left: 10px;
+        margin-left: 3px;
     }
 }
 .selector-funds{
@@ -126,57 +126,83 @@ nav{
 .Caritas{
     text-align: center;
 }
-
+.caritas-backround{
+    background-color: #7BFFD5;
+    height: 60px;
+    width: 40%;
+    border-radius: 12px;
+    padding-top: 10px;
+}
+@media(max-width: 768px){
+    .caritas-backround{
+        background-color: #7BFFD5;
+        height: 60px;
+        width: 40%;
+        border-radius: 12px;
+        padding-top: 15px;
+    }
+}
 .cards{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-.card {
-  flex: 1 1 calc(33.333% - 10px);
-  box-sizing: border-box;
-  background: white;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  margin: 1px;
+.card-header-custom{
+    background-color: #04CCA440;
+    color: black;
+    margin-bottom: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
-@media (max-width: 768px) {
-    .cards{
-        justify-content: center;
-    }
-    .card {
-        flex: 1 1 100%;
-    }
-}
-
-.card-title{
-    text-align: center;
-    margin-top: 16px;
-    margin-bottom: 10px;
-    font-size: 24px;
+.card-custom{
+    border: none;
+    background-color: white;
 }
   
 .body-text{
-  padding-inline: 10px;
-  display: flex;
+    font-size: 18px;
+    padding-inline: 23px;
+    display: flex;
     justify-content: space-between;
 }
-.more{
-    background-color: #7cb6d1;
-    color: white;
+
+.more {
+    position: relative;
+    background-color: #7BFFD5;
+    color: black;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 18px;
-    padding: 5px 15px; 
-    margin-left: 10px;
+    padding: 5px 15px;
+    margin-right: 20px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
     display: inline-block;
+    box-shadow: 1px 1px 0px;
+    overflow: hidden;
 }
-.more:hover{
+.more:hover {
+    color: transparent;
     background-color: #407ad1;
+}
+.more::after {
+    content: "Перейти";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.more:hover::after {
+    opacity: 1;
 }
 
 footer{
