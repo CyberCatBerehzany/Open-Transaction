@@ -1,0 +1,247 @@
+body{
+    font-family: 'Ancizar Serif', serif;
+    background: #04CCA4;
+    background-attachment: fixed;
+}
+
+nav{
+    background-color: #7BFFD5;
+    border-bottom: black;
+    border-radius: 3px;
+    border: black;
+}
+.navbar .btn:hover{
+    background-color: #407ad1;
+    color: white;
+}
+.navbar .nav-link {
+    text-decoration: none; 
+    color: black;
+    padding: 10px 15px;
+    margin: 1px;
+    position: relative;
+}
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+.navbar .nav-link:hover::after {
+    width: 100%; 
+}
+.brand{
+    width: 40px;
+    height: 40;
+}
+
+.singIn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 10px; 
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: inline-block; 
+}
+.singUp{
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 15px; 
+    margin-left: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: inline-block; 
+}
+.dropbtn {
+    color: black;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownContent {
+    display: none;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    background-color: white;
+    min-width: 60px;
+    z-index: 1;
+}
+.dropdownContent button {
+    color: black;
+    padding: 10px 20px;
+    margin-top: 3px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    border-radius: 5px;
+}
+.dropdownContent button:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    color: black;
+}
+
+.form-select{
+    width: 225px;
+    margin-left: 3px;
+}
+@media(max-width: 768px){
+    .form-select{
+        width: 250px;
+        margin-left: 3px;
+    }
+}
+.selector-funds{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.Caritas{
+    text-align: center;
+}
+.caritas-backround{
+    background-color: #7BFFD5;
+    height: 60px;
+    width: 40%;
+    border-radius: 12px;
+    padding-top: 10px;
+}
+@media(max-width: 768px){
+    .caritas-backround{
+        background-color: #7BFFD5;
+        height: 60px;
+        width: 40%;
+        border-radius: 12px;
+        padding-top: 15px;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card-header-custom{
+    background-color: #04CCA440;
+    color: black;
+    margin-bottom: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.card-custom{
+    border: none;
+    background-color: white;
+}
+  
+.body-text{
+    font-size: 18px;
+    padding-inline: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.more {
+    position: relative;
+    background-color: #7BFFD5;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 15px;
+    margin-right: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    box-shadow: 1px 1px 0px;
+    overflow: hidden;
+}
+.more:hover {
+    color: transparent;
+    background-color: #407ad1;
+}
+.more::after {
+    content: "Go";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.more:hover::after {
+    opacity: 1;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+.github-icon{
+    width: 32px;
+    height: 32px;
+    fill: white;
+    transition: fill 0.3s ease;
+}
+.github-icon:hover{
+    fill: gray;
+}
+.bi-twitter-x{
+    color: white;
+    transition: color 0.3s;
+}
+.bi-twitter-x:hover{
+    color: gray;
+}
+
+.contacts{
+    border-left: solid 1px gray;
+}
+@media(max-width: 768px){
+    .contacts{
+        border-left: none;
+    }
+}
+.colesseum{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.colesseum:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
