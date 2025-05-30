@@ -20,9 +20,5 @@ On the main page of the website, the user will be able to select the fund that i
 
 It is also planned that the main page will include links to the websites of the funds that will be partnering with us.
 
-Currently, the website is built using HTML, CSS, JS, and Bootstrap. In the near future, we plan to integrate React.
+Currently, the website is built using HTML, CSS, JS, Bootstrap, React.
 <hr>
-
-Our website
-
-https://cybercatberehzany.github.io/Open-Transaction/en/
