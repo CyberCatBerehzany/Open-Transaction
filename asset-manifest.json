@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Open-Transaction/static/css/main.8843c187.css",
+    "main.js": "/Open-Transaction/static/js/main.14fed3dc.js",
+    "static/media/bootstrap-icons.woff?": "/Open-Transaction/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/bootstrap-icons.woff2?": "/Open-Transaction/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "static/media/OT.png": "/Open-Transaction/static/media/OT.d7262ee84e6c7cfd8de5.png",
+    "index.html": "/Open-Transaction/index.html",
+    "main.8843c187.css.map": "/Open-Transaction/static/css/main.8843c187.css.map",
+    "main.14fed3dc.js.map": "/Open-Transaction/static/js/main.14fed3dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8843c187.css",
+    "static/js/main.14fed3dc.js"
+  ]
+}
